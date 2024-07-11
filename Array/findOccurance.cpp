@@ -1,18 +1,60 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
-    int arr[5] = {11,22,33,11,33};
-    int num =0; 
-    int num2 =0; 
-    int x = 11;
-    int x2 = 33;
-    for(int i =0; i<5; i++){
-        if(arr[i]==x){ num++; }
-        if(arr[i]==x2){ num2++; }
+ 
+void countFreq(int arr[], int n)
+{
+    vector<bool> visited(n, false);
+ 
+    for (int i = 0; i < n; i++) {
+ 
+        // Skip this element if already processed
+        if (visited[i] == true)
+            continue;
+ 
+        // Count frequency
+        int count = 1;
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] == arr[j]) {
+                visited[j] = true;
+                count++;
+            }
+        }
+        cout << arr[i] << " " << count << endl;
     }
-    cout<<x<<"  : times->  "<<num<<endl;
-    cout<<x2<<" : times->  "<<num2;
 }
+ 
+int main()
+{
+    int arr[] = {10,5,10,15,10,5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    countFreq(arr, n);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int arr[5] = {11,22,33,11,33};
+//     int num =0; 
+//     int num2 =0; 
+//     int x = 11;
+//     int x2 = 33;
+//     for(int i =0; i<5; i++){
+//         if(arr[i]==x){ num++; }
+//         if(arr[i]==x2){ num2++; }
+//     }
+//     cout<<x<<"  : times->  "<<num<<endl;
+//     cout<<x2<<" : times->  "<<num2;
+// }
 
 
 
