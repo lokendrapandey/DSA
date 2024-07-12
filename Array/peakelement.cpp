@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
     // int arr[5] = {1,2,3,4,5};
-    int arr[5] = {22,33,43,55,4};
+    int arr[5] = {22,33,463,55,4};
     int n =5;
     int s=0, e= n-1; 
     int mid = (s+e)/2;

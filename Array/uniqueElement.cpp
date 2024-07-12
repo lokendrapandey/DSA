@@ -10,5 +10,5 @@ int unique(int arr[], int n){
 int main(){
     int arr[5] = {1,2,4,2,4};
     cout<<unique(arr,5);
+    }
 
-}
