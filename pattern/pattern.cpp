@@ -93,12 +93,12 @@ cout<<endl;
 }
 int main()
 {
-    // print();
-    // print1();
-    // print2();
-    // print3();
+//     print();
+//     print1();
+//     print2();
+//     print3();
 // print4();
-print5();
+// print5();
 
     // for(int i =1; i<=6; i++){
     // for(int j =1 ; j<=i; j++){
